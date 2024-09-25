@@ -1,10 +1,10 @@
-<div class="square-container">
-  <div class="square">
+<div [ngStyle]="{'background-color': color}" class="square-container">
+<div class="square">
     <div class="logo">
-      <app-color-square [color]="'red'"></app-color-square>
-      <app-color-square [color]="'green'"></app-color-square>
-      <app-color-square [color]="'blue'"></app-color-square>
-      <app-color-square [color]="'yellow'"></app-color-square>
+      <app-color-square (pageColor)="changeColor($event)"  [color]="'red'"></app-color-square>
+      <app-color-square (pageColor)="changeColor($event)" [color]="'green'"></app-color-square>
+      <app-color-square (pageColor)="changeColor($event)" [color]="'blue'"></app-color-square>
+      <app-color-square (pageColor)="changeColor($event)" [color]="'yellow'"></app-color-square>
       </div>
     </div>
   </div>

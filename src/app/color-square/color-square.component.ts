@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {NgClass} from "@angular/common";
 import {Colors} from "../theme/colors";
 
@@ -13,14 +13,8 @@ import {Colors} from "../theme/colors";
 })
 export class ColorSquareComponent {
   @Input() color = "red"
-  initialColor = this.color
+  @Output() pageColor = new EventEmitter<string>()
   changeColor() {
-    if (this.color===Colors.PageColor) {
-      this.color=this.initialColor
-    }
-    else {
-      this.initialColor=this.color
-      this.color = Colors.PageColor
-    }
+    this.pageColor.emit(this.color)
   }
 }
