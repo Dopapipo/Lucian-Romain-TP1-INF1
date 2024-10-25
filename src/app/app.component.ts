@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from "./footer/footer.component";
 import {SquareComponent} from "./square/square.component";
-import {ColorSquareComponent} from "./color-square/color-square.component";
+import {ColorSquareComponent} from "./square/color-square/color-square.component";
 
 @Component({
   selector: 'app-root',

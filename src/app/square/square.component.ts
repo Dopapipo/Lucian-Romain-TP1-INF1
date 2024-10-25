@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Output} from '@angular/core';
-import {ColorSquareComponent} from "../color-square/color-square.component";
+import {ColorSquareComponent} from "./color-square/color-square.component";
 import {CommonModule} from "@angular/common";
 
 @Component({
